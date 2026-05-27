@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Inventory Management System</h1>
+
+    <!-- Product Form -->
+    <div class="card">
+
+      <h2>Add Product</h2>
+
+      <div class="form-grid">
+
+        <input type="text" id="name" placeholder="Product Name">
+
+        <input type="text" id="category" placeholder="Category">
+
+        <input type="number" id="price" placeholder="Price">
+
+        <input type="number" id="stock" placeholder="Stock">
+
+        <input type="number" id="reorderLevel" placeholder="Reorder Level">
+
+        <input type="text" id="supplier" placeholder="Supplier">
+
+      </div>
+
+      <button id="addBtn">
+        Add Product
+      </button>
+
+    </div>
+
+    <!-- Inventory Report -->
+    <div class="card">
+
+      <h2>Inventory Report</h2>
+
+      <p id="inventoryValue"></p>
+
+      <p id="topSelling"></p>
+
+      <p id="slowMoving"></p>
+
+    </div>
+
+    <!-- Product List -->
+    <div class="card">
+
+      <div class="top-section">
+
+        <h2>Products</h2>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search products..."
+        >
+
+      </div>
+
+      <div id="productList"></div>
+
+    </div>
+
+    <!-- Transaction Log -->
+    <div class="card">
+
+      <h2>Transaction Log</h2>
+
+      <div id="transactionList"></div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

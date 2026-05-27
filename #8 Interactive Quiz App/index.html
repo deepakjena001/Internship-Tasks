@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="card">
+
+      <h1>Interactive Quiz App</h1>
+
+      <p>
+        Test your JavaScript basics knowledge.
+      </p>
+
+      <button id="startBtn">
+        Start Quiz
+      </button>
+
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" class="card hidden">
+
+      <div class="top-bar">
+
+        <h2 id="questionNumber">
+          Question 1 / 10
+        </h2>
+
+        <p id="timer">
+          Time: 0s
+        </p>
+
+      </div>
+
+      <h3 id="question"></h3>
+
+      <div id="options"></div>
+
+      <button id="nextBtn">
+        Next Question
+      </button>
+
+    </div>
+
+    <!-- Result Screen -->
+    <div id="resultScreen" class="card hidden">
+
+      <h1>Quiz Result</h1>
+
+      <div class="result-info">
+
+        <p id="scoreText"></p>
+
+        <p id="percentageText"></p>
+
+        <p id="gradeText"></p>
+
+        <p id="correctText"></p>
+
+        <p id="wrongText"></p>
+
+        <p id="totalTimeText"></p>
+
+        <p id="feedbackText"></p>
+
+      </div>
+
+      <h2>Question Review</h2>
+
+      <div id="reviewContainer"></div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
